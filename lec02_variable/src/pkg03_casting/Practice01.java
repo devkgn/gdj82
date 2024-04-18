@@ -14,6 +14,16 @@ public class Practice01 {
 		 * 정수 : 15
 		 * 실수 : 15.7
 		 */
+		int num1 = 10;
+		double num2 = 5.7;
+		// 변수 선언 
+		int num3 = num1 + (int)num2;
+		double num4 = num1 + num2;
+		System.out.println("정수 : "+num3);
+		System.out.println("실수 : "+num4);
+		// 바로 표준출력 
+		System.out.println("정수 : "+(num1+(int)num2));
+		System.out.println("실수 : "+(num1+num2));
 
 	}
 
