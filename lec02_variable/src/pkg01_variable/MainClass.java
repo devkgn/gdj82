@@ -3,6 +3,12 @@ package pkg01_variable;
 public class MainClass {
 
 	public static void main(String[] args) {
+		
+		final double PI = 3.14;
+		// PI = 2.14;
+		System.out.println(PI*10*2);
+		final int MAX_SIZE = 100;
+		
 		// 변수의 선언
 		// 종류 변수명;
 		// 정수 : 소수점이 없는 숫자
