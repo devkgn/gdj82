@@ -12,9 +12,18 @@ public class Practice01 {
 		 * 변수 개념을 도입하여 코드를 수정하세요.
 		 * 철수가 변수를 배우기 전 작성한 코드는 다음과 같습니다.
 		 */
+		System.out.println("=== 변수 선언전 ===");
 		System.out.println(100 + 10);
 		System.out.println(10 * (100 + 10));
 		System.out.println((10 * (100 + 10)) / 10);
+		System.out.println("=== 변수 선언후 ===");
+		int num = 100;
+		int su = 10;
+		System.out.println(num+su);
+		System.out.println(su * (num+su));
+		System.out.println((su * (num + su)) / su);
+		
+		
 	}
 
 }
