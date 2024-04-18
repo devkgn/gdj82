@@ -40,6 +40,26 @@ public class MainClass {
 		System.out.println(pi*r*r);
 		System.out.println(pi*r*r*20);
 		System.out.println(pi*30);
+		// 예약어
+		int n_int;
+		// 의미없는 변수명
+		int a = 18;
+		int b = a+7;
+		System.out.println(a);
+		System.out.println(b);
+		// 의미있는 변수명
+		/*
+		 * 작성자 : 김가남 
+		 * 작성일 : 2024-04-18 
+		 * 목적 : 다음주 같은 요일 계산
+		 */
+		int today = 18;
+		int oneWeekAfterDay = today + 7;
+		
+		
+		
+		
+		
 		
 		
 	}
