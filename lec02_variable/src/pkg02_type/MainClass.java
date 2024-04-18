@@ -47,6 +47,14 @@ public class MainClass {
 		// 부호 사이에 문자열이 하나 이상
 		System.out.println(1+2);
 		System.out.println(1+" : "+2);
+		// 문자열 변수 초기화에 +부호 사용
+		String str4 = new String("감사"+"합니다"+22);
+		String str5 = "감사"+100+"합니다";
+		// charAt()
+		String name = "apple";
+		// java에서 순서는 0부터 시작
+		char singleCha = name.charAt(2);
+		System.out.println(name+"의 3번째 문자는 "+singleCha);
 		
 	}
 
