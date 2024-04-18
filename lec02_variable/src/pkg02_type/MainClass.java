@@ -55,7 +55,10 @@ public class MainClass {
 		// java에서 순서는 0부터 시작
 		char singleCha = name.charAt(2);
 		System.out.println(name+"의 3번째 문자는 "+singleCha);
-		
+		// 저장 가능 범위를 벗어난 값을 할당
+		// 오버플로우
+		// byte b_number = 130;
+
 	}
 
 }
