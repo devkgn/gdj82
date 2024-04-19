@@ -32,5 +32,45 @@ public class MainClass {
 		// 2. 평균(실수)
 		double avg2 = sum / 2.0;
 		System.out.println(avg2);
+		// 복합 대입 연산자
+		int a = 5; 
+		 a += 3;
+		//a = a + 3;
+		 String str = "구디";
+		 str = str + "아카데미";
+		 System.out.println(str);
+		/*
+		 * 1. 자기 자신과 연산 -> 5 + 3 = 8
+		 * 2. 연산 결과를 자기 자신에게 대입 -> a = 8;
+		 * */
+		System.out.println(a);
+		// -=
+		int b = 10;
+		b -= 4; // b = b-4; 
+		System.out.println(b);
+		// *=
+		int c = 10;
+		c *= 5; // c = c*5;
+		System.out.println(c);
+		// 나누기 몫
+		int d = c;
+		d /= 3; 
+		System.out.println(d);
+		// 나누기 나머지
+		int e = 10;
+		e %= 3;
+		System.out.println(e);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
