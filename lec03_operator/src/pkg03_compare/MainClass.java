@@ -47,8 +47,25 @@ public class MainClass {
 		boolean bool8 = noun1.equals("나비");
 		System.out.println(bool8);
 		
-
 		
+		// 논리 연산자
+		int su1 = 10;
+		int su2 = 5;
+		int su3 = 7;
+		boolean test1 = su1 > su2;	// true
+		boolean test2 = su1 > su3;  // true
+		boolean test3 = su1 < su2;	// false
+		
+		boolean result1 = test1 && test2;	// true && true
+		// boolean result1 = (su1 > su2) && (su1 > su3);
+		System.out.println("true && true : "+result1);
+		boolean result2 = test1 && test3;	// true && false
+		System.out.println("true && false :"+result2);
+		
+		boolean result3 = test1 || test2;	// true || true
+		System.out.println("true || true : "+result3);
+		boolean result4 = test1 || test3;	// true || false
+		System.out.println("true || false : "+result4);
 		
 		
 		
