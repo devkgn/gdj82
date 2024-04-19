@@ -21,6 +21,34 @@ public class MainClass {
 		int a = 2, b = 0;
 		System.out.println("최초 a : "+a);
 		System.out.println("최초 b : "+b);
+		
+		// 전위 증가 연산
+		b = ++a;
+		// 1. a = a + 1; -> a = 3;
+		// 2. b = a; -> b = 3;
+		System.out.println("연산 후 a : "+a);
+		System.out.println("연산 후 b : "+b);
+		
+		int x = 2, y = 0;
+		System.out.println("최초 x :"+x);
+		System.out.println("최초 y : "+y);
+		
+		y = x++;
+		// 1. y = x; -> y = 2;
+		// 2. x = x + 1; -> x = 3;
+		System.out.println("연산 후 x : "+x);
+		System.out.println("연산 후 y : "+y);
+		
+		
+		int c = 5, d = 3;
+		d = --c;
+		
+		int e = 5, f = 3;
+		f = e--;
+		
+		
+		
+		
 	}
 
 }
