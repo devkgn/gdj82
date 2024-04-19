@@ -42,7 +42,7 @@ public class MainClass {
 		// 참조형 비교
 		String text1 = new String("apple");
 		String text2 = new String("apple");
-		System.out.println(text1 == text2);
+		System.out.println("문자열 비교 : "+(text1 == text2));
 		// +부호
 		// 부호 사이에 문자열이 하나 이상
 		System.out.println(1+2);

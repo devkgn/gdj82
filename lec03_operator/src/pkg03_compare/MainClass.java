@@ -29,5 +29,29 @@ public class MainClass {
 		System.out.println((int)c1);
 		System.out.println((int)c2);
 		System.out.println(bool5);
+		// String(문자열) 비교하기
+		String str1 = "출발";
+		String str2 = "출발";
+		boolean bool6 = (str1 == str2) ;
+		System.out.println("결과 : "+bool6);
+		// 참조형 비교
+		String text1 = new String("apple");
+		String text2 = new String("apple");
+		System.out.println("문자열 비교 : "+(text1 == text2)); 
+
+		String noun1 = "나비";
+		String noun2 = new String("나비");
+		boolean bool7 = noun1.equals(noun2);
+		System.out.println("나비 : "+bool7);
+
+		boolean bool8 = noun1.equals("나비");
+		System.out.println(bool8);
+		
+
+		
+		
+		
+		
+		
 	}
 }
