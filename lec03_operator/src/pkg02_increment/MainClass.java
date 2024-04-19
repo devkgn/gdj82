@@ -42,13 +42,18 @@ public class MainClass {
 		
 		int c = 5, d = 3;
 		d = --c;
+		// 1. c = c - 1; -> c = 4;
+		// 2. d = c; -> d = 4;
+		System.out.println("c : "+c);
+		System.out.println("d : "+d);
 		
 		int e = 5, f = 3;
 		f = e--;
-		
-		
-		
-		
+		// 1. f = e; -> f = 5;
+		// 2. e = e - 1; -> e = 4;
+		System.out.println("e : "+e);
+		System.out.println("f : "+f);
+
 	}
 
 }
