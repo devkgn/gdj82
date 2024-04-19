@@ -76,7 +76,18 @@ public class MainClass {
 		// true && !false -> true
 		System.out.println(test1 && !test3);
 		
-		
+		// 삼항 연산자
+		// 조건식 ? true일때 식 : false일때식;
+		int x = 1;
+		int y = 3;
+		// x와 y를 비교했을때
+		// x가 y보다 크면 -> x 출력
+		// y가 x보다 크면 -> y 출력 
+		System.out.println(x > y ? x : y);
+		int max = x > y ? x : y ;
+		System.out.println("max : "+max);
+		String max_str = x > y ? "x가 더 크다." : "y가 더 크다.";
+		System.out.println(max_str);
 		
 	}
 }

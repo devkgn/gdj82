@@ -14,6 +14,10 @@ public class Practice02 {
 		String name = sc.next();
 		boolean bool1 = name.equals("Chulsu");
 		System.out.println(bool1);
+		
+		String str = (bool1 == false) ?"잘못된 닉네임":"정상";
+		System.out.println(str);
+		
 		sc.close();
 	}
 }
