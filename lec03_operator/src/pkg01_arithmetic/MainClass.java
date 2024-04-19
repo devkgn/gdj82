@@ -3,11 +3,12 @@ package pkg01_arithmetic;
 public class MainClass {
 	public static void main(String[] args) {
 		// 산술 연산자
-		int su1 = 10;
+		int su1 = 17;
 		int su2 = 3;
 		// 더하기
 		int multiple = su1 + su2;
 		System.out.println("+ : "+multiple);
+		System.out.println(" +(2) :"+(su1+su2));
 		// 빼기
 		int diff = su1 - su2;
 		System.out.println("- : "+diff);
@@ -31,7 +32,5 @@ public class MainClass {
 		// 2. 평균(실수)
 		double avg2 = sum / 2.0;
 		System.out.println(avg2);
-		
-		
 	}
 }
