@@ -68,6 +68,14 @@ public class MainClass {
 		System.out.println("true || false : "+result4);
 		
 		
+		boolean isTrue = true;
+		boolean isFalse = !isTrue;
+		System.out.println("isFalse : "+isFalse);
+		// true && false -> false -> true
+		System.out.println(!(test1 && test3));
+		// true && !false -> true
+		System.out.println(test1 && !test3);
+		
 		
 		
 	}
