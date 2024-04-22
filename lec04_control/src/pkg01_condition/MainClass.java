@@ -15,5 +15,31 @@ public class MainClass {
 			System.out.println("블록 안 : "+su);
 		}
 		// System.out.println("블록 밖 : "+num);
+		
+		int num = -3;
+		System.out.println(num);
+		if(num > 0) {
+			System.out.println("양수입니다.");
+		} else { // 음수이거나 0인 경우
+			System.out.println("음수입니다.");
+		}
+		
+		int i_num = 500;
+		if(i_num >= 400) {
+			// 400보다 크거나 같은 수
+			System.out.println("1. 400 ~");
+		} else if(i_num >= 300) {
+			// 400보다 작은 수 중에서
+			// if 조건식 결과가 false인 경우 중에서
+			// 300보다 크거나 같은 수
+			System.out.println("2. 300 ~ 399");
+		} else if(i_num >= 200) {
+			// 400보다 작은 수 중에서
+			// 300보다 작은 수 중에서
+			// 200보다 크거나 같은 수
+			System.out.println("3. 200 ~ 299");
+		} else {
+			System.out.println("4. ~ 199");
+		}
 	}
 }
