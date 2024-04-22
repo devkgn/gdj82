@@ -42,9 +42,23 @@ public class MainClass {
 			System.out.println("a : "+a);
 		}
 		
+		// 초기식 생략
+		// 변수를 블록 밖에서도 사용하고 싶은 경우
+		// 변수의 사용 범위 확장
+		int i = 1;
+		for(; i <= 5 ; i++) {
+			System.out.println("안 : "+i);
+		}
+		System.out.println("밖 : "+i);
 		
-		
-		
-		
+		// 조건식 생략
+		// 1. 조건식을 블록 내부에 작성
+		// 2. 무한 루프를 발생 시키고자 하는 경우
+		for(int j = 1; ;j++) {
+			System.out.println(j);
+			if(j >= 10) {
+				break;
+			}
+		}
 	}
 }
