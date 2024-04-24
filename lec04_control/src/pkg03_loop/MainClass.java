@@ -45,11 +45,11 @@ public class MainClass {
 		// 초기식 생략
 		// 변수를 블록 밖에서도 사용하고 싶은 경우
 		// 변수의 사용 범위 확장
-		int i = 1;
-		for(; i <= 5 ; i++) {
-			System.out.println("안 : "+i);
-		}
-		System.out.println("밖 : "+i);
+//		int i = 1;
+//		for(; i <= 5 ; i++) {
+//			System.out.println("안 : "+i);
+//		}
+//		System.out.println("밖 : "+i);
 		
 		// 조건식 생략
 		// 1. 조건식을 블록 내부에 작성
@@ -60,5 +60,44 @@ public class MainClass {
 				break;
 			}
 		}
+		
+		// 증감식 생략
+		// 1. 증감식이 복잡한 경우
+//		for(int i = 1 ; i <= 10 ; ) {
+//			System.out.println(i);
+//			i = (++i) % 2;
+//		}
+		
+		// 2. 다른 변수의 연산에 의해 증감이 결정될 경우
+		int target = 10;
+		int count = 0;
+		// target 변수가 0보다 작은 경우까지 반복
+		// target 변수가 0보다 작아질때까지 count 더하기
+		for(;target > 0 ;) {
+			count++;
+			target -= count;
+		}
+		System.out.println("최종 count값 : "+count);
+		
+		// 중첩 반복문
+		for(int i = 0 ; i < 2 ; i++) {
+			System.out.println("외부 i : "+i);
+			for(int j = 0 ; j < 3 ; j++) {
+				System.out.println("내부 i :"+i);
+				System.out.println("내부 j :"+j);
+			}
+			System.out.println("종료 i :"+i);
+		}
+		
+		for(int i = 1 ; i <= 2 ; i++) {
+			System.out.println("A");
+			for(int j = 1 ; j <= 3 ;j++) {
+				System.out.println("B");
+			}
+			System.out.println("C");
+		}
+		
+		
+		
 	}
 }
