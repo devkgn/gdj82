@@ -94,61 +94,7 @@ public class MainClass {
 			break;
 		}
 		
-		// while문
-		int intNum = 1; // 초기값 
-		while(intNum <= 10) {
-			System.out.println(intNum);
-			intNum++; // 증감식
-		}
-		// for문
-		for(int intNum2 = 1 ; intNum2 <= 10 ; intNum2++) {
-			System.out.println(intNum2);
-		}
 		
-//		while(true) {
-//			if(조건식) {
-//				break;
-//			}
-//		}
-		
-		
-		for(int i = 1 ; i <=5 ; i++) {
-			System.out.println("for문 : "+i);
-		}
-		
-		int cnt = 1;
-		while(cnt <= 5) {
-			System.out.println("while문 : "+cnt);
-			cnt++;
-		}
-		
-		int test = 1;
-		while(true) {
-			System.out.println(test);
-			test ++;
-			if(test > 5) {
-				break;
-			}
-		}
-		
-		// while문 
-		int count1 = 10;
-		while(0 < count1) {
-			System.out.println("count1");
-			count1 --;
-		}
-		// while문 비교
-		int count2 = 10;
-		while(0 < count2 && count2 < 10) {
-			System.out.println("count2");
-			count2 --;
-		}
-		// do ~ while문
-		int count3 = 10;
-		do {
-			System.out.println("count3");
-			count3 --;
-		}while(0 < count3 && count3 < 10);
 		
 	}
 }
