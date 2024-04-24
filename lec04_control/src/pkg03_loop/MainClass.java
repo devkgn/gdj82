@@ -98,6 +98,22 @@ public class MainClass {
 		}
 		
 		
+		for(int i = 1 ; i <= 2 ; i++) {
+			System.out.println(1);
+			for(int j = 1 ; j <= 3 ; j++) {
+				System.out.println(2);
+				// 내부 for문에 break 사용
+				break;
+			}
+			System.out.println(3);
+			// 외부 for문에 break 사용
+			break;
+		}
+		
+		
+		
+		
+		
 		
 	}
 }
