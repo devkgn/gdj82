@@ -131,8 +131,24 @@ public class MainClass {
 			}
 		}
 		
-		
-		
+		// while문 
+		int count1 = 10;
+		while(0 < count1) {
+			System.out.println("count1");
+			count1 --;
+		}
+		// while문 비교
+		int count2 = 10;
+		while(0 < count2 && count2 < 10) {
+			System.out.println("count2");
+			count2 --;
+		}
+		// do ~ while문
+		int count3 = 10;
+		do {
+			System.out.println("count3");
+			count3 --;
+		}while(0 < count3 && count3 < 10);
 		
 	}
 }

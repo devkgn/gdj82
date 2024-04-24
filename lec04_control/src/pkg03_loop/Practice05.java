@@ -6,7 +6,7 @@ public class Practice05 {
 //		"계산 결과가 27입니다."라는 메시지를 출력하고 반복문을 중단하세요.
 		 int result = 0;
 		 for (int i = 2; i <= 9; i++) {
-			if (result == 27) {
+			if (result > 27) {
 				System.out.println("27을 만족하는 값이 나왔습니다!");
 				break;
 			}
