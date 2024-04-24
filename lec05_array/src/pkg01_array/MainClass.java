@@ -61,6 +61,19 @@ public class MainClass {
 //		int[] age5;
 //		age5 = {9,10,11};
 		
+		// 배열의 출력
+		int[] values = {5,6,7,8,9};
+		System.out.println(values[2]);
+		
+		// 반복문을 활용한 배열의 출력
+		String[] redFruits = {"딸기","체리","사과"};
+		for(int i = 0 ; i < redFruits.length ; i++) {
+			System.out.println(redFruits[i]);
+		}
+		
+		
+		
+		
 		
 	}
 }
