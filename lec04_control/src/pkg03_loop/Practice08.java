@@ -6,5 +6,13 @@ public class Practice08 {
 		// 생 일 축 하 해 !
 		// 이때 각 글자 중간 중간에 있는 띄어쓰기를 없앤다음 보내려고 해요. 
 		String text = "생 일 축 하 해 !";
+		for(int i = 0 ; i < text.length() ; i++) {
+			char ch = text.charAt(i);
+			if(ch == ' ') {
+				continue;
+			}
+			System.out.print(ch);
+		}
+		
 	}
 }
