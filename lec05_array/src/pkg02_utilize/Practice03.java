@@ -22,7 +22,7 @@ public class Practice03 {
 		// i : 0 ~ 3 => 0 ~ ages.length - 1 보다 작다.
 		// j : i+1 ~ 4 => i+1 ~ ages.length 보다 작다.
 		for(int i = 0 ; i < ages.length -1 ; i++) {
-			for(int j = i+1 ; j < ages.length ;j++) {
+			for(int j = 1 ; j < ages.length ;j++) {
 				if(ages[i] > ages[j]) {
 					int temp = ages[i];
 					ages[i] = ages[j];
