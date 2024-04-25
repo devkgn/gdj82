@@ -49,6 +49,11 @@ public class MainClass {
 		int randonNum = (int)(Math.random()*100) + 1;
 		System.out.println(randonNum);
 		
+		for(int i = 0 ; i < 3 ; i++) {
+			int rnd = (int)(Math.random()*100)+40;
+			System.out.println(rnd);
+		}
+		
 		
 	}
 }
