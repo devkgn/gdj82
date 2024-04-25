@@ -26,9 +26,28 @@ public class MainClass {
 			System.out.println("arr4 : "+num);
 		}
 		
+		// 랜덤값(난수)
+		// 0.0부터 0.99999999.......까지 숫자
+		double basic = Math.random();
+		System.out.println(basic);
 		
+		// 10 곱하기 : 0.0부터 9.99999.. 
+		// 100 곱하기 : 0.0부터 99.99999
+		// 최솟값 ~ 최대값 -> (최대값-최소값+1)
+		double hundred = basic * 100;
+		System.out.println(hundred);
 		
+		// 형변환
+		int casting = (int)hundred;
+		System.out.println(casting);
 		
+		// 최소값 더하기
+		// 0 ~ 99 -> 1 ~ 100
+		int add = casting + 1;
+		System.out.println(add);
+		
+		int randonNum = (int)(Math.random()*100) + 1;
+		System.out.println(randonNum);
 		
 		
 	}
