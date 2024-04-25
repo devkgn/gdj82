@@ -71,8 +71,29 @@ public class MainClass {
 			System.out.println(redFruits[i]);
 		}
 		
+		// toCharArray
+		String sentence = "HelloWorld!";
+		char[] charArray; 
+		charArray = sentence.toCharArray();
+		System.out.println("=== toCharArray ===");
+		for(int i = 0 ; i < charArray.length ;i++) {
+			System.out.println(i+" : "+charArray[i]);
+		}
 		
+		for(int i = 0 ; i < sentence.length() ; i++) {
+			System.out.println("charAt("+i+") : "+sentence.charAt(i));
+		}
 		
+		// 기본 for문
+		int[] numbers = {1,2,3,4,5};
+		for(int i = 0 ; i < numbers.length ; i++) {
+			System.out.println(numbers[i]);
+		}
+		
+		// for each
+		for(int num : numbers) {
+			System.out.println("for each : "+num);
+		}
 		
 		
 	}
