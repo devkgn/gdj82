@@ -24,5 +24,6 @@ public class Run {
 		// 동시 진행 가능
 		Car c2 = new Car();
 		String str2 = new String();
+		
 	}
 }
