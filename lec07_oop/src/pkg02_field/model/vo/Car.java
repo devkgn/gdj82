@@ -6,11 +6,22 @@ public class Car {
 	// 인스턴스 변수 -> 클래스 변수
 	public static final String name = "avante";
 	// 브랜드 -> 전체
-	public static String brand;
+	public static String brand = "BMW";
 	// 색깔 -> 다른 패키지X
 	protected String color; 
 	// 제조년도 -> Car(현재) 클래스 안에서만 O
 	private int year;
 	// 가격 -> 같은 패키지 까지 O
 	int price;
+	
+	// 인스턴스 변수 year 초기화
+	{year = 2024;}
+	// 클래스 변수(static) brand 초기화
+	static {brand = "KIA";}
+	
+	
+	
+	
+	
+	
 }

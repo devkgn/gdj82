@@ -17,13 +17,13 @@ public class Run {
 		// 필드 예약어 static
 		Car c2 = new Car();
 		Car c3 = new Car();
-		
+		System.out.println("재할당 전 : "+c1.brand);
 		c2.brand = "Hyundai";
 		System.out.println("c1 : "+c1.brand);
 		System.out.println("c2 : "+c2.brand);
 		System.out.println("c3 : "+c3.brand);
 		
-		
+		// System.out.println(c1.year);
 		
 	}
 }
