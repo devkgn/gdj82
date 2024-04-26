@@ -1,6 +1,19 @@
 package pkg03_method.study.model.vo;
 
 public class Declare {
+	public void run() {
+		// 동일 클래스 내부 메소드 호출
+		// 1. 리턴 X, 매개변수 X
+		method1();
+		// 2. 리턴X, 매개변수 O
+		method2(3);
+		// 3. 리턴 O, 매개변수 X
+		int num1 = method3();
+		// 4. 리턴 O, 매개변수 O
+		int num2 = method4(5,7);
+	}
+	
+	
 	// 메소드의 표현식
 	// [접근제한자] [예약어] 반환형 메소드명([매개변수]){}
 	
