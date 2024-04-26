@@ -1,5 +1,7 @@
 package pkg02_field.controller;
 
+import java.util.Scanner;
+
 import pkg02_field.model.vo.Car;
 
 public class Run {
@@ -24,6 +26,6 @@ public class Run {
 		System.out.println("c3 : "+c3.brand);
 		
 		// System.out.println(c1.year);
-		
+	
 	}
 }
