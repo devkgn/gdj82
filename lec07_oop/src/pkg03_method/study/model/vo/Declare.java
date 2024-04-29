@@ -11,6 +11,15 @@ public class Declare {
 		int num1 = method3();
 		// 4. 리턴 O, 매개변수 O
 		int num2 = method4(5,7);
+		// public
+		Access a = new Access();
+		a.accessMethod1();
+		// protected
+		a.accessMethod2();
+		// (default)
+		a.accessMethod3();
+		// private
+		// a.accessMethod4();
 	}
 	
 	
@@ -57,7 +66,9 @@ public class Declare {
 		}
 	}
 	
-	
+	public static void staticMethod() {
+		System.out.println("정적 메소드");
+	}
 	
 	
 	

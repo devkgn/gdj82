@@ -1,5 +1,6 @@
 package pkg03_method.study.controller;
 
+import pkg03_method.study.model.vo.Access;
 import pkg03_method.study.model.vo.Declare;
 
 public class Run {
@@ -24,6 +25,15 @@ public class Run {
 		d.method5(1,2,3,4,5,6,7,8,9);
 		d.method5(89,72,31);
 		d.method6("같이 : ",10,9,8,7);
+		
+		Access a = new Access();
+		a.accessMethod1();
+		// a.accessMethod2();
+		// a.accessMethod3();
+		
+		// d.staticMethod();
+		Declare.staticMethod();
+		Math.random();
 		
 	}
 	
