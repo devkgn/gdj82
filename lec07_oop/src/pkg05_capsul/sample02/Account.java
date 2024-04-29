@@ -16,7 +16,11 @@ public class Account {
 	}
 	
 	public void setBalance(int balance) {
-		this.balance = balance;
+		if(balance < 0) {
+			System.out.println("출금이 불가능합니다.");
+		}else {
+			this.balance = balance;
+		}
 	}
 	
 	public String getOwner() {
