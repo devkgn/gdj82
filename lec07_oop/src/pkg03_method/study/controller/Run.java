@@ -19,6 +19,12 @@ public class Run {
 		// 4. 리턴O, 매개변수 O
 		int num2 = d.method4(2, 5);
 		System.out.println(num2);
+		
+		// 가변인자 매개변수 메소드 호출
+		d.method5(1,2,3,4,5,6,7,8,9);
+		d.method5(89,72,31);
+		d.method6("같이 : ",10,9,8,7);
+		
 	}
 	
 	// 메소드 선언

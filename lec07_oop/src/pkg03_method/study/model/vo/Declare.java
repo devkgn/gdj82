@@ -38,4 +38,29 @@ public class Declare {
 		System.out.println("method4가 실행!!");
 		return a+b;
 	}
+	
+	// 가변인자 매개변수
+	public void method5(int...num) {
+		for(int i = 0 ; i < num.length ; i++) {
+			System.out.println("기본 for문 : "+num[i]);
+		}
+		for(int n : num) {
+			System.out.println("for each문 : "+n);
+		}
+	}
+	
+	// 다른 매개변수와 함께 가변인자 매개변수
+	// 가변인자는 매개변수의 가장 끝에만!!
+	public void method6(String str, int...num) {
+		for(int n : num) {
+			System.out.println(str+" : "+n);
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
 }
