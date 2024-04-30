@@ -26,6 +26,23 @@ public class Run {
 		// 인덱스를 이용한 출력
 		System.out.println(arr1);
 		System.out.println(arr1[0]);
+		System.out.println(arr1[0].getName());
+		
+		// 반복문을 이용한 출력(기본 for문)
+		for(int i = 0 ; i < arr4.length ; i++) {
+			System.out.println(i+" : "+arr4[i]);
+			System.out.println("이름 : "+arr4[i].getName());
+		}
+		
+		// 반복문을 이용한 출력(for each)
+		for(Academy a : arr4) {
+			System.out.println(a);
+			System.out.println(a.getName());
+		}
+		
+		
+		
+		
 		
 	}
 }
