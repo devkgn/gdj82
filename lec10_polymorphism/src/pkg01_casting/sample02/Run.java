@@ -29,6 +29,11 @@ public class Run {
 		// animal.wagTail();
 		Dog dog = (Dog)animal;
 		dog.wagTail();
-
+		
+		Animal a = new Dog();
+		System.out.println(a instanceof Dog);
+		
+		Animal b = new Animal();
+		System.out.println(b instanceof Animal);
 	}
 }
