@@ -14,10 +14,13 @@ public class MountainBike implements BicycleInterface{
 			System.out.println("최대 속도를 초과하여 가속할 수 없습니다.");
 		}
 	}
-
 	@Override
 	public void speedDown(int decrement) {
-
+		if(speed - decrement < 0) {
+			System.out.println("음의 속도로 갈 수 없습니다.");
+		}else {
+			System.out.println("속도를 "+decrement+"만큼 감소시켰습니다.");
+		}
 	}
 
 }
