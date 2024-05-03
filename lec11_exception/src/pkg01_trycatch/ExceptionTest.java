@@ -8,8 +8,9 @@ public class ExceptionTest {
 		try {
 			System.out.println(arr[0].length());
 			System.out.println(arr[3]);
+			arr[0].equals(arr[1]);
 		} catch(NullPointerException e) {
-			System.out.println("1. null은 길이를 알 수 없어요.");
+			System.out.println(e.toString());
 		} catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println("2. 인덱스는 배열의 길이를 벗어날 수 없어요.");
 		} catch(Exception e) {
