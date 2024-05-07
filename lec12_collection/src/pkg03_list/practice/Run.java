@@ -1,6 +1,8 @@
 package pkg03_list.practice;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Run {
@@ -33,6 +35,29 @@ public class Run {
 		// 요소 검색
 		boolean isObj = products.contains(new Product("오렌지",1500));
 		System.out.println("오렌지 있어요? "+isObj);
+		
+		// 객체 요소 정렬
+		// 1. Comparable 2. Comparator
+		products.add(new Product("복숭아",2000));
+//		Collections.sort(products);
+//		System.out.println(products);
+		
+		// Collections.sort(products,new CustomComparator());
+		
+		Collections.sort(products,new Comparator<Product>() {
+			@Override
+			public int compare(Product p1, Product p2) {
+				return p1.getPrice() - p2.getPrice();
+			}
+		});
+		
+		Collections.sort(products,new Comparator<Product>() {
+			@Override
+			public int compare(Product p1,Product p2) {
+				return p1.getName().compareTo(p2.getName());
+			}
+		});
+		System.out.println(products);
 		
 		
 	}

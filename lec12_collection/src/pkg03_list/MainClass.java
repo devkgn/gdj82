@@ -31,5 +31,19 @@ public class MainClass {
 		List<Object> list1 = new ArrayList<Object>();
 		list1.add(1);
 		list1.add("test");
+		
+		// 문자열 비교
+		// 1. contains
+		String small ="ab";
+		String large = "abcdefg";
+		boolean isContains = large.contains(small);
+		System.out.println(isContains);
+		
+		// 2. compareTo
+		String one = "aaa";
+		String two = "bbb";
+		// -1 : 그대로 , 1: 순서 뒤집기, 0: 같은 문자열
+		System.out.println(one.compareTo(two));
+		System.out.println(two.compareTo(one));
 	}
 }
