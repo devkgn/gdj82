@@ -1,6 +1,7 @@
 package pkg04_set.practice;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class Run {
@@ -61,6 +62,31 @@ public class Run {
 		System.out.println(minusSet);
 		System.out.println("확인 1 : "+songSet1);
 		System.out.println("확인 2 : "+songSet2);
+		
+		// 1. Song에 getter 추가
+		// 2. Iterator 인터페이스 활용해서 songSet1, songSet2 출력
+		// 3. getter를 통해서 값 접근
+		/*
+		 * === songSet1 === 
+		 * 지코의 노래 SPOT! 
+		 * 아일릿의 노래 Magnetic 
+		 * === songSet2 === 
+		 * 아일릿의 노래 Magnetic 
+		 * QWER의 노래 고민중독
+		 */
+		System.out.println("=== songSet1 ===");
+		Iterator<Song> itr1 = songSet1.iterator();
+		while(itr1.hasNext()) {
+			Song s = itr1.next();
+			System.out.println(s.getSinger()+"의 노래 "+s.getName());
+		}
+		System.out.println("=== songSet2 ===");
+		Iterator<Song> itr2 = songSet2.iterator();
+		while(itr2.hasNext()) {
+			Song s = itr2.next();
+			System.out.println(s.getSinger()+"의 노래 "+s.getName());
+			// System.out.println(itr2.next().getSinger()+"의 노래 "+itr2.next().getName());
+		}
  	}
 
 }

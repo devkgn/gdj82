@@ -1,8 +1,11 @@
 package pkg04_set.study;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class HashSetClass {
 	public static void main(String[] args) {
@@ -77,6 +80,43 @@ public class HashSetClass {
 			System.out.println(name);
 		}
 		
+		// LinkedHashSet과의 비교
+		Set<String> unorderedList = new HashSet<String>();
+		unorderedList.add("가");
+		unorderedList.add("나");
+		unorderedList.add("다");
+		unorderedList.add("라");
+		System.out.println(unorderedList);
 		
+		Set<String> orderedList = new LinkedHashSet<String>();
+		orderedList.add("가");
+		orderedList.add("나");
+		orderedList.add("다");
+		orderedList.add("라");
+		System.out.println(orderedList);
+		
+		// TreeSet(오름차순)
+		Set<String> ascendSet = new TreeSet<String>();
+		ascendSet.add("동");
+		ascendSet.add("서");
+		ascendSet.add("남");
+		ascendSet.add("북");
+		System.out.println(ascendSet);
+		// 내림차순
+		Set<Integer> descendSet 
+			= new TreeSet<Integer>(Collections.reverseOrder());
+		descendSet.add(234);
+		descendSet.add(56);
+		descendSet.add(987);
+		System.out.println("내림차순 : "+descendSet);
+		// Set -> TreeSet
+		Set<Integer> randomSet = new HashSet<Integer>();
+		randomSet.add(234);
+		randomSet.add(75);
+		randomSet.add(618);
+		System.out.println(randomSet);
+		Set<Integer> noRandomSet = new TreeSet<Integer>();
+		noRandomSet.addAll(randomSet);
+		System.out.println(noRandomSet);
 	}
 }

@@ -12,6 +12,14 @@ public class Song {
 		this.name = name;
 		this.singer = singer;
 	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String getSinger() {
+		return singer;
+	}
 
 	@Override
 	public int hashCode() {
