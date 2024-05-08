@@ -39,6 +39,18 @@ public class HashSetClass {
 		numSet3.addAll(numSet2);
 		System.out.println(numSet3);
 	
+		// 4. 교집합
+		Set<Integer> numSet4 = new HashSet<Integer>();
+		numSet4.addAll(numSet1);
+		numSet4.retainAll(numSet2);
+		System.out.println(numSet4);
+		
+		// 5. 차집합
+		Set<Integer> numSet5 = new HashSet<Integer>();
+		numSet5.addAll(numSet1);
+		numSet5.removeAll(numSet2);
+		System.out.println(numSet5);
+		
 				
 		
 	}

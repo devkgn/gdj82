@@ -26,6 +26,20 @@ public class Run {
 		songSet1.remove(new Song("밤양갱","비비"));
 		System.out.println(songSet1);
 		
+		// 1. songSet1과 songSet2의 합집합을 
+		// 담고 있는 객체 sumSet을 구성하세요.
+		// 2. songSet1과 songSet2의 교집합을 
+		// 담고 있는 객체 sameSet을 구성하세요. 
+		// 3. songSet1에서 songSet2가 가진 요소를 제외한 차집합을 담고 있는 
+		// 객체 minusSet을 구성하세요. 
+		// (최종적으로 songSet1과 songSet2를 출력했을 때 변화가 없어야 합니다.)
+		/*
+		 * ===== 합집합 ===== 
+		 * [{제목=SPOT!, 가수=지코}, {제목=Magnetic, 가수=아일릿}, {제목=고민중독,가수=QWER}] 
+		 * ===== 교집합 ===== 
+		 * [{제목=Magnetic, 가수=아일릿}] 
+		 * ===== 차집합 ===== [{제목=SPOT!,가수=지코}]
+		 */
 	}
 
 }

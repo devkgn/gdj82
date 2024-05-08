@@ -13,9 +13,27 @@ public class HashSetObjClass {
 		System.out.println(set1);
 		
 		// 2. 요소 삭제 -> hashCode, equals
-		set1.remove(new Student("김철수",15));
+		// set1.remove(new Student("김철수",15));
 		System.out.println(set1);
-		set1.clear();
+		// set1.clear();
 		System.out.println(set1);
+		
+		// 3. 합집합
+		Set<Student> set2 = new HashSet<Student>();
+		set2.add(new Student("홍길동",24));
+		set2.add(new Student("마동식",21));
+		
+//		set1.addAll(set2);
+//		System.out.println(set1);
+		
+		// 4. 교집합
+//		set1.retainAll(set2);
+//		System.out.println(set1);
+		
+		// 5. 차집합
+		set1.removeAll(set2);
+		System.out.println(set1);
+		
+		
 	}
 }
