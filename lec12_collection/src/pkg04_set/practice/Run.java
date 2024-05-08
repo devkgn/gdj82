@@ -19,6 +19,13 @@ public class Run {
 		System.out.println(songSet1);
 		System.out.println(songSet2);
 		
+		// 요소 삭제 연습하기
+		// 1. songSet1에서 곡 제목이 "밤양갱"이고, 
+		// 가수명이 "비비"인 요소를 삭제하세요.
+		// 2. songSet1을 출력하세요.
+		songSet1.remove(new Song("밤양갱","비비"));
+		System.out.println(songSet1);
+		
 	}
 
 }
