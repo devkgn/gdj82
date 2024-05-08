@@ -34,6 +34,12 @@ public class HashSetObjClass {
 		set1.removeAll(set2);
 		System.out.println(set1);
 		
+		// 6. 요소 조회 : for each
+		for(Student s : set2) {
+			System.out.println(s);
+			System.out.println(s.getName());
+			System.out.println(s.getAge());
+		}
 		
 	}
 }

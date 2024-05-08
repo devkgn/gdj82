@@ -38,8 +38,29 @@ public class Run {
 		 * [{제목=SPOT!, 가수=지코}, {제목=Magnetic, 가수=아일릿}, {제목=고민중독,가수=QWER}] 
 		 * ===== 교집합 ===== 
 		 * [{제목=Magnetic, 가수=아일릿}] 
-		 * ===== 차집합 ===== [{제목=SPOT!,가수=지코}]
+		 * ===== 차집합 ===== 
+		 * [{제목=SPOT!,가수=지코}]
 		 */
-	}
+		System.out.println("확인 1 : "+songSet1);
+		System.out.println("확인 2 : "+songSet2);
+		
+		Set<Song> sumSet = new HashSet<Song>();
+		sumSet.addAll(songSet1);
+		sumSet.addAll(songSet2);
+		System.out.println("===== 합집합 =====");
+		System.out.println(sumSet);
+		Set<Song> sameSet = new HashSet<Song>();
+		sameSet.addAll(songSet1);
+		sameSet.retainAll(songSet2);
+		System.out.println("===== 교집합 =====");
+		System.out.println(sameSet);
+		Set<Song> minusSet = new HashSet<Song>();
+		minusSet.addAll(songSet1);
+		minusSet.removeAll(songSet2);
+		System.out.println("===== 차집합 =====");
+		System.out.println(minusSet);
+		System.out.println("확인 1 : "+songSet1);
+		System.out.println("확인 2 : "+songSet2);
+ 	}
 
 }

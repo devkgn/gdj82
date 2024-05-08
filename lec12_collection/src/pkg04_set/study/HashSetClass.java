@@ -1,6 +1,7 @@
 package pkg04_set.study;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class HashSetClass {
@@ -51,7 +52,27 @@ public class HashSetClass {
 		numSet5.removeAll(numSet2);
 		System.out.println(numSet5);
 		
-				
+		// 6. 요소 조회
+		// get(X), 기본 for문(X), for each(O)
+		Set<String> set2 = new HashSet<String>();
+		set2.add("봄");
+		set2.add("여름");
+		set2.add("가을");
+		set2.add("겨울");
+		for(String season : set2) {
+			System.out.println(season);
+		}
+		
+		// 7. 요소 조회 : iterator 
+		Set<String> names = new HashSet<String>();
+		names.add("자은우");
+		names.add("김동원");
+		names.add("송감");
+		// (1) 컬렉션의 iterator 메소드 호출
+		Iterator<String> itr = names.iterator();
+		// (2) hasNext()로 요소가 있는지 찾아보기
+		// (3) next()로 찾은 요소 꺼내기
+		
 		
 	}
 }
