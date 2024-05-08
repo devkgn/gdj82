@@ -72,6 +72,10 @@ public class HashSetClass {
 		Iterator<String> itr = names.iterator();
 		// (2) hasNext()로 요소가 있는지 찾아보기
 		// (3) next()로 찾은 요소 꺼내기
+		while(itr.hasNext()) {
+			String name = itr.next();
+			System.out.println(name);
+		}
 		
 		
 	}

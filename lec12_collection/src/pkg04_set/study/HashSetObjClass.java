@@ -1,6 +1,7 @@
 package pkg04_set.study;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class HashSetObjClass {
@@ -37,6 +38,16 @@ public class HashSetObjClass {
 		// 6. 요소 조회 : for each
 		for(Student s : set2) {
 			System.out.println(s);
+			System.out.println(s.getName());
+			System.out.println(s.getAge());
+		}
+		
+		set2.add(new Student("이영희",23));
+
+		// 7. 요소 조회 : Iterator
+		Iterator<Student> itr = set2.iterator();
+		while(itr.hasNext()) {
+			Student s = itr.next();
 			System.out.println(s.getName());
 			System.out.println(s.getAge());
 		}
