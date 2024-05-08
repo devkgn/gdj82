@@ -14,6 +14,12 @@ public class HashSetClass {
 		set1.add("가을");
 		System.out.println(set1);
 		
+		// 2. 요소 삭제
+		set1.remove("여름");
+		System.out.println(set1);
+		set1.clear();
+		System.out.println(set1);
+		
 		
 	}
 }

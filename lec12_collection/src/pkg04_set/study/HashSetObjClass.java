@@ -11,5 +11,11 @@ public class HashSetObjClass {
 		set1.add(new Student("홍길동",24));
 		set1.add(new Student("김철수",15));
 		System.out.println(set1);
+		
+		// 2. 요소 삭제 -> hashCode, equals
+		set1.remove(new Student("김철수",15));
+		System.out.println(set1);
+		set1.clear();
+		System.out.println(set1);
 	}
 }
