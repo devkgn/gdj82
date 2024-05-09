@@ -15,5 +15,18 @@ public class Run {
 		phoneBook.get("John").setAge(31);
 		System.out.println("===== 변경후 =====");
 		System.out.println(phoneBook);
+		
+		Employee e = phoneBook.get("Emma");
+		String phone = e.getPhone();
+		int age = e.getAge();
+		System.out.println("전화번호 : "+ phone);
+		System.out.println("나이 : "+ age);
+		
+		String name = "Emma";
+		System.out.println(" === "+name+"의 정보 ===");
+		System.out.println("전화번호(2) : "+ phoneBook.get(name).getPhone());
+		System.out.println("나이(2) : "+phoneBook.get(name).getAge());
+		
+		
 	}
 }

@@ -1,7 +1,10 @@
 package pkg05_map.study;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 public class HashMapObjClass {
 	public static void main(String[] args) {
@@ -17,5 +20,30 @@ public class HashMapObjClass {
 		// 요소 조회
 		Snack s = snackMap.get("다이제");
 		System.out.println(s);
+		
+		// keySet()
+		Set<String> keySet = snackMap.keySet();
+		Iterator<String> itKey = keySet.iterator();
+		while(itKey.hasNext()) {
+			String key = itKey.next();
+			Snack value = snackMap.get(key);
+			System.out.println(key+" = "+value);
+		}
+		// entrySet()
+		Set<Entry<String,Snack>> entrySet = snackMap.entrySet();
+		Iterator<Entry<String,Snack>> entryItr = entrySet.iterator();
+		while(entryItr.hasNext()) {
+			Entry<String,Snack> entry = entryItr.next();
+			String kye = entry.getKey();
+			Snack value = entry.getValue();
+			System.out.println(kye+" = "+value);
+		}
+		
+		
+		
+		
+		
+		
+		
 	}
 }
