@@ -14,6 +14,8 @@ public class HashMapObjClass {
 		snackMap.put("새우깡",new Snack("트러플맛",400));
 		System.out.println(snackMap);
 		
-		
+		// 요소 조회
+		Snack s = snackMap.get("다이제");
+		System.out.println(s);
 	}
 }

@@ -1,5 +1,6 @@
 package pkg05_map.study;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
@@ -18,7 +19,11 @@ public class HashMapClass {
 		ticket.put("isUsed", true);
 		ticket.put("price", 10000);
 		System.out.println(ticket);
-
+		
+		String str = (String)ticket.get("name");
+		System.out.println(ticket.get("name"));
+		System.out.println(ticket.get("price"));
+		System.out.println(ticket.get("isUsed"));
 		
 	}
 
