@@ -1,7 +1,10 @@
 package pkg05_map.practice01;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 public class Run {
 	public static void main(String[] args) {
@@ -26,6 +29,35 @@ public class Run {
 		System.out.println(" === "+name+"의 정보 ===");
 		System.out.println("전화번호(2) : "+ phoneBook.get(name).getPhone());
 		System.out.println("나이(2) : "+phoneBook.get(name).getAge());
+		
+		System.out.println("===== keySet활용 =====");
+		Set<String> keySet = phoneBook.keySet();
+		Iterator<String> itrKey = keySet.iterator();
+		while(itrKey.hasNext()) {
+			String key = itrKey.next();
+			Employee e1 = phoneBook.get(key);
+			System.out.println("* "+key+" *");
+			System.out.println("전화번호 : "+e1.getPhone());
+			System.out.println("나이 : "+e1.getAge());
+		}
+		
+		System.out.println("===== entrySet활용 =====");
+		Set<Entry<String,Employee>> entrySet = phoneBook.entrySet();
+		Iterator<Entry<String,Employee>> entryItr = entrySet.iterator();
+		while(entryItr.hasNext()) {
+			Entry<String,Employee> entry = entryItr.next();
+			String key = entry.getKey();
+			Employee value = entry.getValue();
+			System.out.println("* "+key+" *");
+			System.out.println("전화번호 : "+value.getPhone());
+			System.out.println("나이 : "+value.getAge());
+		}
+		
+		
+		
+		
+		
+		
 		
 		
 	}

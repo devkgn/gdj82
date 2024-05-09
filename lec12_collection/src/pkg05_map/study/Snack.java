@@ -36,20 +36,20 @@ public class Snack {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(calory, flavor);
+		return Objects.hash(calory,flavor);
 	}
-
+	
 	@Override
 	public boolean equals(Object obj) {
 		boolean result = false;
 		if(obj instanceof Snack) {
 			Snack s = (Snack)obj;
-			if(s.flavor.equals(flavor) && s.calory == calory) {
+			if(s.flavor.equals(flavor) && s.calory == calory)
 				result = true;
-			}
 		}
 		return result;
 	}
+	
 	
 	
 }

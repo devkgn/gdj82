@@ -39,6 +39,12 @@ public class HashMapObjClass {
 			System.out.println(kye+" = "+value);
 		}
 		
+		if(snackMap.containsValue(new Snack("밀크맛",270))) {
+			System.out.println("있어요");
+		} else {
+			System.out.println("없어요");
+		}
+		
 		
 		
 		
