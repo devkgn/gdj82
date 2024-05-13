@@ -43,6 +43,30 @@ public class MainClass {
 		str += ",World";
 		System.out.println("변경후주소값 : "+System.identityHashCode(str));
 		
+		System.out.println("=== 문자열 리터럴 ===");
+		// 1. 값이 똑같다면 똑같은 해시코드 가짐
+		// 2. 값이 변경되면 새로운 리터럴 생성
+		System.out.println("참외 되기 전 : "+(h1 == h2));
+		h2 += ", 참외";
+		System.out.println("h1 : "+System.identityHashCode(h1));
+		System.out.println("h2 : "+System.identityHashCode(h2));
+		// 3. 값만 동일하면 주소값 동일 -> == 사용
+		System.out.println("참외 된 후 : "+(h1 == h2));
+		
+		System.out.println("=== 문자열 객체 ===");
+		// String h3 = new String("수박");
+		String h4 = new String("수박");
+		System.out.println("h3 : "+System.identityHashCode(h3));
+		System.out.println("h4 : "+System.identityHashCode(h4));
+		System.out.println("비교(1) : "+(h3 == h4));
+		System.out.println("비교(2) : "+(h3.equals(h4)));
+		
+		System.out.println("=== 1. concat ===");
+		String test = "GDJ82";
+		test = test.concat("할 수 있다!");
+		System.out.println(test);
+		
+		
 		
 	}
 }
