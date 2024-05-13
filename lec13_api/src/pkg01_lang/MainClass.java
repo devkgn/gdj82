@@ -120,8 +120,28 @@ public class MainClass {
 		str3 = str3.replace(" ", "");
 		System.out.println(str3);
 		
+		System.out.println("=== join ===");
+		// String.join("기준값",배열)
+		String[] strArr = {"봄","여름","가을","겨울"};
+		String changedStr = String.join("-", strArr);
+		System.out.println(changedStr);
 		
+		System.out.println("=== substring() ===");
+		String cutTest = "hello world";
+		System.out.println(cutTest.substring(6));
+		System.out.println(cutTest.substring(0,5));
+		// substring 종료인덱스는 적어도 시작 인덱스보다 큰값
+		System.out.println(cutTest.substring(3,4));
 		
+		System.out.println("=== 문자열 자르기 활용===");
+		String file = "test.jpg";
+		// file.substring(4);
+		// file.substring(4+1);
+		// file.substring(file.lasIndexOf(".")+1)
+		String extension = file.substring(file.lastIndexOf(".")+1);
+		System.out.println("확장자 :"+extension);
+		String name = file.substring(0,file.lastIndexOf("."));
+		System.out.println("파일명 :"+name);
 		
 		
 		
