@@ -160,10 +160,21 @@ public class MainClass {
 			// 멈춤
 		}
 			
-			
+		int intValue = 10;
+		System.out.println(intValue+20);
+		String intStr = String.valueOf(intValue);
+		System.out.println(intStr+20);
 		
+		double doubleValue = 3.14;
+		String doubleStr = String.valueOf(doubleValue);
 		
-		
+		// StringBuilder
+		StringBuilder sb = new StringBuilder("Hello");
+		sb.append(",World");
+		System.out.println("StringBuilder : "+sb);
+		System.out.println("=== insert ===");
+		sb.insert(6, " Java ");
+		System.out.println(sb);
 		
 		
 		
