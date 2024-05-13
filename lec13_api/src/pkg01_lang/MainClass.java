@@ -143,6 +143,31 @@ public class MainClass {
 		String name = file.substring(0,file.lastIndexOf("."));
 		System.out.println("파일명 :"+name);
 		
+		System.out.println("=== 문자열 대문자, 소문자 바꾸기 ===");
+		String big = "hello world";
+		System.out.println(big.toUpperCase());
+		String small = "HELLO WORLD";
+		System.out.println(small.toLowerCase());
+		
+		if(str.equals("n")|| str.equals("N")) {
+			// 멈춤
+		}
+		
+		if(str.toUpperCase().equals("N")) {
+			// 멈춤
+		}
+		if(str.toLowerCase().equals("n")){
+			// 멈춤
+		}
+			
+			
+		
+		
+		
+		
+		
+		
+		
 		
 		
 	}
