@@ -66,7 +66,27 @@ public class MainClass {
 		test = test.concat("할 수 있다!");
 		System.out.println(test);
 		
+		System.out.println("=== 2. indexOf ===");
+		// int num = test.indexOf("GD");
+		System.out.println(test.indexOf("GD"));
+		if(test.indexOf("0") != -1) {
+			System.out.println("0 문자열 포함");
+		} else {
+			System.out.println("0 문자열 포함X");
+		}
+		test = "안녕. 나는 김가남이야. 호호";
+		System.out.println(test.indexOf(".",3));
+		System.out.println(test.indexOf(".",(test.indexOf(".")+1)));
 		
+		System.out.println("=== lastIndexOf ===");
+		System.out.println(test.lastIndexOf("."));
+		System.out.println(test.lastIndexOf(".",3));
+		
+		str ="봄-여름-가을-겨울";
+		String[] seasons = str.split("-");
+		for(String s : seasons) {
+			System.out.println(s);
+		}
 		
 	}
 }
