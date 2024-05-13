@@ -176,6 +176,14 @@ public class MainClass {
 		sb.insert(6, " Java ");
 		System.out.println(sb);
 		
+		System.out.println("=== delete ===");
+		sb.delete(11, 17);
+		System.out.println(sb);
+		System.out.println("=== deleteCharAt ===");
+		int idx = sb.indexOf(",");
+		sb.deleteCharAt(idx);
+		System.out.println(sb);
+		
 		
 		
 		
