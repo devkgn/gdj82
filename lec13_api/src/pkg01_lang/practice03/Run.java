@@ -13,7 +13,6 @@ public class Run {
 			String age = s1[1];
 			String address = s1[2];
 			String gender = s1[3];
-			
 			// String을 매개변수 자료형 형변환
 			Person p = new Person(name,Integer.parseInt(age)
 					,address,gender.charAt(0));

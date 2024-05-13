@@ -88,5 +88,42 @@ public class MainClass {
 			System.out.println(s);
 		}
 		
+		System.out.println("=== replace ===");
+		String sentence = "나는 코딩을 못해";
+		sentence = sentence.replace("못해", "잘해");
+		System.out.println(sentence);
+		
+		System.out.println("=== isBlank() ===");
+		String empty1 = "";
+		String empty2 = " ";
+		System.out.println(empty1.isBlank());
+		System.out.println(empty2.isBlank());
+		System.out.println("=== isEmpty() ===");
+		System.out.println(empty1.isEmpty());
+		System.out.println(empty2.isEmpty());
+		if(empty2.isBlank()) {
+			if(empty2.isEmpty()) {
+				// 두개 같이 쓰기
+			}
+		}
+		System.out.println("=== .length() == 0 ===");
+		System.out.println(empty1.length() == 0);
+		System.out.println(empty2.length());
+		
+		System.out.println("=== trim() ===");
+		String str3 = "                안녕하세요";
+		str3 = str3.trim();
+		System.out.println(str3);
+		str3 = " 안 녕 하 세 요 ";
+		str3 = str3.trim();
+		System.out.println(str3);
+		str3 = str3.replace(" ", "");
+		System.out.println(str3);
+		
+		
+		
+		
+		
+		
 	}
 }
