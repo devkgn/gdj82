@@ -1,6 +1,8 @@
 package pkg02_util;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
@@ -58,9 +60,9 @@ public class MainClass {
 		// 특정 날짜로부터 오늘이 몇일 지났는지 확인
 		// 1. 비교하고 싶은 날짜 Calendar 객체 구성
 		Calendar last = Calendar.getInstance();
-		last.set(Calendar.YEAR, 2024);
-		last.set(Calendar.MONTH, 10-1);
-		last.set(Calendar.DATE, 16);
+		last.set(Calendar.YEAR, 2004);
+		last.set(Calendar.MONTH, 5-1);
+		last.set(Calendar.DATE, 7);
 		// 2. 오늘 날짜 객체 구성
 		Calendar thisDay = Calendar.getInstance();
 		// last.getTimeInMillis()
@@ -72,6 +74,17 @@ public class MainClass {
 		// 5. 24시간 * 60분 * 60초 나누기
 		diff = diff/(24*60*60);
 		System.out.println(diff);
+		
+		// Date
+		Date d = new Date();
+		System.out.println(d.getDate());
+		
+		SimpleDateFormat sdf 
+			= new SimpleDateFormat("yy-MM-dd E HH:mm:ss");
+		String printData = sdf.format(d);
+		System.out.println(printData);
+		
+		
 		
 		
 	}
