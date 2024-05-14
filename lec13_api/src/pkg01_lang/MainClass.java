@@ -250,5 +250,29 @@ public class MainClass {
 		height = Math.round(height*(Math.pow(10, 2)))/(Math.pow(10, 2));
 		System.out.println(height);
 		
+		// pi = 3.14159265;
+		double dup = Math.ceil(pi);
+		System.out.println(dup);
+		double ddown = Math.floor(pi);
+		System.out.println(ddown);
+		
+		System.out.println(Math.ceil(1/2));
+		System.out.println(Math.ceil(1.0/2.0));
+		
+		dup = Math.ceil(pi*100)/100.0;
+		System.out.println(dup);
+		ddown = Math.floor(pi*100)/100.0;
+		System.out.println(ddown);
+		
+		System.out.println("=== max ===");
+		System.out.println(Math.max(52, 347)); 
+		System.out.println(52 < 347 ? 347 : 52);
+		System.out.println("=== min ===");
+		System.out.println(Math.min(3.14, 6.8));
+		
+		// 10 ~ 20 사이의 난수
+		int random = (int)(Math.random()*11)+10;
+		System.out.println(random);
+		
 	}
 }
