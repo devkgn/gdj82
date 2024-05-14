@@ -16,6 +16,7 @@ public class Practice05 {
 		}
 		
 		
+		
 		// 출력 예시)
 		// 위치 : 10
 		// 문자열 : brown

@@ -1,5 +1,7 @@
 package pkg01_lang;
 
+import java.util.StringTokenizer;
+
 public class MainClass {
 	public static void main(String[] args) {
 		int[] src = {10,15,20,25,30};
@@ -184,6 +186,21 @@ public class MainClass {
 		sb.deleteCharAt(idx);
 		System.out.println(sb);
 		
+		System.out.println("=== reverse ===");
+		sb.reverse();
+		System.out.println(sb);
+		
+		test = "AA||BB||CC";
+		String[] testArr = test.split("\\|\\|");
+		for(String testOne : testArr) {
+			System.out.println("split : "+testOne);
+		}
+		
+		StringTokenizer st = new StringTokenizer(test,"\\|\\|");
+		while(st.hasMoreTokens()) {
+			String token = st.nextToken();
+			System.out.println("st : "+token);
+		}
 		
 		
 		
