@@ -2,6 +2,7 @@ package pkg01_lang;
 
 import java.util.StringTokenizer;
 
+
 public class MainClass {
 	public static void main(String[] args) {
 		int[] src = {10,15,20,25,30};
@@ -202,9 +203,52 @@ public class MainClass {
 			System.out.println("st : "+token);
 		}
 		
+		StringTokenizer st1 = new StringTokenizer("AeeBeeC","ee");
+		while(st1.hasMoreTokens()) {
+			String value = st1.nextToken();
+			System.out.println("value : "+value);
+		}
 		
+		System.out.println("=== abs ===");
+		int number = -37;
+		// number = Math.abs(number);
+		number = number < 0 ? -number : number;
+		System.out.println(number);
 		
+		System.out.println("=== pow ===");
+		System.out.println(5*5*5);
+		int count = 7;
+		int result = 1;
+		for(int i = 0 ; i < count ; i++) {
+			result *= 5;
+		}
+		System.out.println(result);
+		System.out.println(Math.pow(5, 7));
 		
+		System.out.println("=== round ===");
+		double pi = 3.14159265;
+		System.out.println(Math.round(pi));
+		// 세번째 자리까지 반올림
+		// 1. 원하는 자리수만큼 10의 지수 곱하기
+		double multiple = pi * 1000;
+		System.out.println(multiple);
+		// 2. 반올림
+		long up = Math.round(multiple);
+		System.out.println(up);
+		// 3. 10의 지수만큼 나누기
+		double div = up / 1000.0;
+		System.out.println(div);
+		// 정리
+		// 1000 -> Math.pow(10,3);
+		double powNum = Math.pow(10, 3);
+		double after = Math.round(pi*powNum)/powNum;
+		System.out.println("after : "+after);
+		
+		double height = 179.8654;
+		System.out.println(Math.round(height));
+		// 100 -> 10의 2승 -> Math.pow(10,2)
+		height = Math.round(height*(Math.pow(10, 2)))/(Math.pow(10, 2));
+		System.out.println(height);
 		
 	}
 }
