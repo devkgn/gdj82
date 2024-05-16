@@ -16,9 +16,9 @@ public class Practice01 {
 		File dir = new File("\\main\\sub\\"+date);
 		
 //		File dir = new File("\\main\\sub\\"+year+"\\"+month+"\\"+day);
-		if(dir.exists() == false) {
-			dir.mkdirs();
-		}
+//		if(dir.exists() == false) {
+//			dir.mkdirs();
+//		}
 		
 		Practice02 p2 = new Practice02();
 		p2.deleteFile(dir);
