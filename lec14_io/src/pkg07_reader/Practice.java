@@ -19,9 +19,9 @@ public class Practice {
 		 */
 		File dir = new File("\\storage\\practice");
 		File file = new File(dir,"output.txt");
-		BufferedReader br = null;
-		try {
-			br = new BufferedReader(new FileReader(file));
+		//BufferedReader br = null;
+		try(BufferedReader br = new BufferedReader(new FileReader(file))){
+			//br = new BufferedReader(new FileReader(file));
 			String line = null;
 			StringBuilder sb = new StringBuilder();
 			int sum = 0 ;
@@ -37,7 +37,7 @@ public class Practice {
 			}
 			System.out.println(sb.toString());
 			System.out.println("공백 제외 글자수 : "+sum);
-			br.close();
+			//br.close();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
