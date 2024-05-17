@@ -9,7 +9,7 @@ import java.io.IOException;
 public class BufferedTest {
 	public static void main(String[] args) {
 		File dir = new File("\\storage");
-		File file = new File(dir,"sample3.dat");
+		File file = new File(dir,"애국가1.dat");
 		
 		FileInputStream fis = null;
 		BufferedInputStream bis = null;
