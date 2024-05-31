@@ -31,12 +31,35 @@ public class MemberMenu {
 				case 2 : new MemberController().selectMemberAll(); break;
 				case 3 : selectByMemberId(); break;
 				case 4 : selectByMemberName(); break;
-				
+				case 5 : updateMember(); break;
+				case 6 : deleteMember(); break;
 				case 0 : System.out.println("이용해주셔서 감사합니다.");return;
 				default : System.out.println("다시 입력해주세요.");break;
 			}
 			
 		}
+	}
+	
+	public void deleteMember() {
+		System.out.println("***** 회원 탈퇴 *****");
+		System.out.println("아이디 : ");
+		String memberId = sc.nextLine();
+		
+		new MemberController().deleteMember(memberId);
+	}
+	
+	public void updateMember() {
+		System.out.println("***** 회원 정보 수정 *****");
+		System.out.print("아이디 : ");
+		String memberId = sc.nextLine();
+		System.out.print("이름 : ");
+		String memberName = sc.nextLine();
+		System.out.print("이메일 : ");
+		String memberEmail = sc.nextLine();
+		System.out.print("전화번호 : ");
+		String memberPhone = sc.nextLine();
+		
+		new MemberController().updateMember(memberId,memberName,memberEmail,memberPhone);
 	}
 	
 	public void selectByMemberName() {

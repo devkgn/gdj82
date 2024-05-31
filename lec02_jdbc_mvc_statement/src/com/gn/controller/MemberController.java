@@ -9,6 +9,32 @@ import com.gn.view.MemberMenu;
 // 사용자의 요청 처리 : View에서 전달받은 데이터 가공 -> Dao 
 public class MemberController {
 	
+	public void deleteMember(String memberId) {
+		int result = new MemberDao().deleteMember(memberId);
+		if(result > 0) {
+			
+		} else {
+			
+		}
+	}
+	
+	public void updateMember(String memberId, String memberName, 
+			String memberEmail, String memberPhone) {
+		Member m = new Member();
+		m.setMemberId(memberId);
+		m.setMemberName(memberName);
+		m.setMemberEmail(memberEmail);
+		m.setMemberPhone(memberPhone);
+		
+		int result = new MemberDao().updateMember(m);
+		if(result > 0) {
+			new MemberMenu().displaySuccess("회원 정보 수정");
+		} else {
+			new MemberMenu().displayFail("회원 정보 수정");
+		}
+	}
+	
+	
 	public void selectByMemberName(String name) {
 		// MemberMenu로 부터 전달 받은 매개변수를 활용하여
 		// MemberDao의 selectByMemberName 메소드 호출
