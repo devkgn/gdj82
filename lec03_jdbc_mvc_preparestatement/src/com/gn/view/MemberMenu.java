@@ -28,16 +28,26 @@ public class MemberMenu {
 			switch(menu) {
 				case 1 : createMember(); break;
 //				case 2 : new MemberController().selectMemberAll(); break;
-				case 3 : selectByMemberId(); break;
+//				case 3 : selectByMemberId(); break;
 				case 4 : selectByMemberName(); break;
 //				case 5 : updateMember(); break;
-//				case 6 : deleteMember(); break;
+				case 6 : deleteMember(); break;
 				case 0 : System.out.println("이용해주셔서 감사합니다.");return;
 				default : System.out.println("다시 입력해주세요.");break;
 			}
 			
 		}
 		
+	}
+	
+	public void deleteMember() {
+		System.out.println("***** 회원 탈퇴 *****");
+		System.out.println("회원 탈퇴를 하시려면, 로그인 하세요.");
+		System.out.print("아이디 : ");
+		String id = sc.nextLine();
+		System.out.print("비밀번호 : ");
+		String pw = sc.nextLine();
+		new MemberController().deleteMember(id,pw);
 	}
 	
 	public void selectByMemberName() {

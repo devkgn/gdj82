@@ -8,6 +8,29 @@ import com.gn.view.MemberMenu;
 
 public class MemberController {
 	
+	public void deleteMember(String mId, String mPw) {
+		Member m = new MemberDao().selectByMemberIdPw(mId,mPw);
+		
+//		if(m == null) {
+//			new MemberMenu().displayFail("회원 탈퇴");
+//		}else {
+//			int result = new MemberDao().deleteMember(mId);
+//			if(result > 0) {
+//				new MemberMenu().displaySuccess("회원 탈퇴");
+//			} else {
+//				new MemberMenu().displayFail("회원 탈퇴");
+//			}
+//		}
+		
+		if(m != null 
+				&& new MemberDao().deleteMember(mId) > 0) {
+			new MemberMenu().displaySuccess("회원 탈퇴");
+		}else {
+			new MemberMenu().displayFail("회원 탈퇴");
+		}
+		
+	}
+	
 	public void selectByMemberName(String memberName) {
 		List<Member> resultList = new MemberDao().selectByMemberName(memberName);
 		if(resultList.isEmpty()) {

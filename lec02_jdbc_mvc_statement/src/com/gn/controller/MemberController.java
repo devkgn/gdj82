@@ -9,6 +9,8 @@ import com.gn.view.MemberMenu;
 // 사용자의 요청 처리 : View에서 전달받은 데이터 가공 -> Dao 
 public class MemberController {
 	
+	public void 
+	
 	public void deleteMember(String memberId) {
 		int result = new MemberDao().deleteMember(memberId);
 		if(result > 0) {
