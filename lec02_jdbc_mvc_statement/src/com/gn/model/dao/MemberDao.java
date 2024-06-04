@@ -14,7 +14,7 @@ import com.gn.model.vo.Member;
 public class MemberDao {
 	
 	public int deleteMember(String memberId) {
-		
+		return 0;
 	}
 	
 	public int updateMember(Member m) {

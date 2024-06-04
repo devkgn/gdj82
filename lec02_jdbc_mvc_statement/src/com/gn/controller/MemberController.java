@@ -39,7 +39,6 @@ public class MemberController {
 		// MemberMenu로 부터 전달 받은 매개변수를 활용하여
 		// MemberDao의 selectByMemberName 메소드 호출
 		// 메소드 호출의 결과를 List<Member>로 받아야 함
-		
 		// 리턴받은 결과 기준으로 화면 출력
 	}
 	
