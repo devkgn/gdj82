@@ -13,6 +13,9 @@ import com.gn.model.vo.Member;
 // DB와 직접 접근 -> SQL문 실행 요청
 public class MemberDao {
 	
+	
+	
+	
 	public int deleteMember(String memberId) {
 		return 0;
 	}

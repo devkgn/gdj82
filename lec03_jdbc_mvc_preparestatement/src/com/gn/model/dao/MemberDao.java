@@ -12,6 +12,80 @@ import com.gn.model.vo.Member;
 
 public class MemberDao {
 	
+	public int deleteMember(String id) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int result = 0;
+		try {
+			Class.forName("org.mariadb.jdbc.Driver");
+			String url = "jdbc:mariadb://127.0.0.1:3306/jdbc_test";
+			String user = "scott";
+			String userpw = "tiger";
+			conn = DriverManager.getConnection(url, user, userpw);
+			
+			String sql = "DELETE FROM `member` WHERE member_id = ?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			
+			result = pstmt.executeUpdate();	
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				pstmt.close();
+				conn.close();
+			}catch(SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return result;
+	}
+	
+	public Member selectByMemberIdPw(String id, String pw) {
+		Connection conn = null;
+		PreparedStatement pstmt= null;
+		ResultSet rs = null;
+		Member m = null;
+		try {
+			Class.forName("org.mariadb.jdbc.Driver");
+			
+			String url = "jdbc:mariadb://127.0.0.1:3306/jdbc_test";
+			String user = "scott";
+			String userpw = "tiger";
+			conn = DriverManager.getConnection(url, user, userpw);
+			
+			String sql = "SELECT * FROM `member` WHERE member_id = ? AND member_pwd = ?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			pstmt.setString(2, pw);
+			
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				m = new Member(rs.getInt("member_no")
+						,rs.getString("member_id")
+						,rs.getString("member_pwd")
+						,rs.getString("member_name")
+						,rs.getString("member_email")
+						,rs.getString("member_phone")
+						,rs.getString("member_gender")
+						,rs.getTimestamp("reg_date").toLocalDateTime()
+						,rs.getTimestamp("mod_date").toLocalDateTime());
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				rs.close();
+				pstmt.close();
+				conn.close();
+			}catch(SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return m;
+	}
+	
 	public List<Member> selectByMemberName(String name){
 		Connection conn = null;
 		PreparedStatement pstmt = null;
