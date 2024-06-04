@@ -1,10 +1,21 @@
 package com.gn.controller;
 
+import java.util.List;
+
 import com.gn.model.dao.MemberDao;
 import com.gn.model.vo.Member;
 import com.gn.view.MemberMenu;
 
 public class MemberController {
+	
+	public void selectByMemberName(String memberName) {
+		List<Member> resultList = new MemberDao().selectByMemberName(memberName);
+		if(resultList.isEmpty()) {
+			new MemberMenu().displayNoData();
+		} else {
+			new MemberMenu().displayMemberList(resultList);
+		}
+	}
 	
 	public void insertMember(String id, String pwd, String name, String email,
 			String phone, String gender) {

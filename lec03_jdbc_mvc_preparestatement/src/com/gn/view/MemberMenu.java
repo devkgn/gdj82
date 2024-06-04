@@ -28,8 +28,8 @@ public class MemberMenu {
 			switch(menu) {
 				case 1 : createMember(); break;
 //				case 2 : new MemberController().selectMemberAll(); break;
-//				case 3 : selectByMemberId(); break;
-//				case 4 : selectByMemberName(); break;
+				case 3 : selectByMemberId(); break;
+				case 4 : selectByMemberName(); break;
 //				case 5 : updateMember(); break;
 //				case 6 : deleteMember(); break;
 				case 0 : System.out.println("이용해주셔서 감사합니다.");return;
@@ -38,6 +38,13 @@ public class MemberMenu {
 			
 		}
 		
+	}
+	
+	public void selectByMemberName() {
+		System.out.println("***** 회원 이름으로 키워드 검색 *****");
+		System.out.print("이름 : ");
+		String name = sc.nextLine();
+		new MemberController().selectByMemberName(name);
 	}
 	
 	public void createMember() {
